@@ -1,21 +1,93 @@
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
 
 public class TestSetUp {
     public static final WebDriver driver;
+    public static final MainPage mainPage;
+    public static final CoursesPage coursesPage;
+    public static final TestingCoursesPage testingCoursesPage;
+    public static final JavaTesterCoursePage javaTesterCoursePage;
 
     static {
         driver = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver", "C:\\Denis\\tools\\chrome-win64\\chrome.exe");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        mainPage = new MainPage(driver);
+        coursesPage = new CoursesPage(driver);
+        testingCoursesPage = new TestingCoursesPage(driver);
+        javaTesterCoursePage = new JavaTesterCoursePage(driver);
+    }
+
+    public void switchToNextTab() {
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(tabs.size()-1));
     }
 
     @AfterEach
     public void closeBrowser(){
-        driver.close();
+        driver.quit();
+    }
+
+    @Test
+    public void availability_MainMenu_AllCourses_Testing_JavaTester() {
+        mainPage.open();
+        mainPage.clickAllCoursesOnMainMenu();
+        switchToNextTab();
+        coursesPage.clickTestingButton();
+        testingCoursesPage.clickJavaTesterCourseCard();
+        switchToNextTab();
+        String currentUrl = driver.getCurrentUrl();
+        assertEquals(JavaTesterCoursePage.getUrl(), currentUrl);
+    }
+
+    @Test
+    public void availability_MainMenu_AllCourses_JavaTester() {
+        mainPage.open();
+        mainPage.clickAllCoursesOnMainMenu();
+        switchToNextTab();
+        coursesPage.clickJavaTesterCourseCard();
+        switchToNextTab();
+        String currentUrl = driver.getCurrentUrl();
+        assertEquals(JavaTesterCoursePage.getUrl(), currentUrl);
+    }
+
+    @Test
+    public void availability_MainMenu_Testing_JavaTester() {
+        mainPage.open();
+        mainPage.clickTestingOnMainMenu();
+        switchToNextTab();
+        testingCoursesPage.clickJavaTesterCourseCard();
+        String currentUrl = driver.getCurrentUrl();
+        assertEquals(JavaTesterCoursePage.getUrl(), currentUrl);
+    }
+
+    @Test
+    public void availability_Testing_JavaTester() {
+        mainPage.open();
+        mainPage.clickTestingButton();
+        switchToNextTab();
+        testingCoursesPage.clickJavaTesterCourseCard();
+        switchToNextTab();
+        String currentUrl = driver.getCurrentUrl();
+        assertEquals(JavaTesterCoursePage.getUrl(), currentUrl);
+    }
+
+    @Test
+    public void signupCourseButtonOpensPopup() {
+        javaTesterCoursePage.open();
+        javaTesterCoursePage.clickSignUpForCourseButton();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(javaTesterCoursePage.getSignUpForCoursePopupXpath())));
     }
 }

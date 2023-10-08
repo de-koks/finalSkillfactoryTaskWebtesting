@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestSetUp.java" afterDir="false" />
+    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="Initial commit&#10;&#10;Project's framework is set up. Main page and Java tester page classes are created.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/CoursesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestingCoursesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSetUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,67 @@
     "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.TestSetUp.signupCourseButtonOpensPopup">
+    <configuration name="JavaTesterCoursePageTests.availability_MainMenu_AllCourses_Testing_JavaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTaskWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JavaTesterCoursePageTests" />
+      <option name="METHOD_NAME" value="availability_MainMenu_AllCourses_Testing_JavaTester" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSetUp.availability_MainMenu_AllCourses_JavaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTaskWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
+      <option name="METHOD_NAME" value="availability_MainMenu_AllCourses_JavaTester" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSetUp.availability_MainMenu_AllCourses_Testing_JavaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTaskWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
+      <option name="METHOD_NAME" value="availability_MainMenu_AllCourses_Testing_JavaTester" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSetUp.availability_Testing_JavaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTaskWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
+      <option name="METHOD_NAME" value="availability_Testing_JavaTester" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSetUp.signupCourseButtonOpensPopup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTaskWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
+      <option name="METHOD_NAME" value="signupCourseButtonOpensPopup" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestSetUp.signupCourseButtonOpensPopup" />
+        <item itemvalue="JUnit.TestSetUp.availability_Testing_JavaTester" />
+        <item itemvalue="JUnit.TestSetUp.availability_MainMenu_AllCourses_JavaTester" />
+        <item itemvalue="JUnit.TestSetUp.availability_MainMenu_AllCourses_Testing_JavaTester" />
+        <item itemvalue="JUnit.JavaTesterCoursePageTests.availability_MainMenu_AllCourses_Testing_JavaTester" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,6 +116,19 @@
       <option name="presentableId" value="Default" />
       <updated>1696686261149</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit&#10;&#10;Project's framework is set up. Main page and Java tester page classes are created.">
+      <option name="closed" value="true" />
+      <created>1696750873245</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696750873245</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit&#10;&#10;Project's framework is set up. Main page and Java tester page classes are created." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;&#10;Project's framework is set up. Main page and Java tester page classes are created." />
   </component>
 </project>
