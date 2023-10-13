@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="Initial commit&#10;&#10;Project's framework is set up. Main page and Java tester page classes are created.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/CoursesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestingCoursesPage.java" afterDir="false" />
+    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="5 tests are ready&#10;&#10;5 testing methods are implemented and checked.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSetUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,69 +25,69 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2WRCyOrLjL1X6KW5fnyME1gyhbZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.TestSetUp.signupCourseButtonOpensPopup">
-    <configuration name="JavaTesterCoursePageTests.availability_MainMenu_AllCourses_Testing_JavaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="JUnit.TestSetUp.javaTesterPageYoutubeButtonLeads">
+    <configuration name="TestSetUp.javaTesterPageHabrButtonLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JavaTesterCoursePageTests" />
-      <option name="METHOD_NAME" value="availability_MainMenu_AllCourses_Testing_JavaTester" />
+      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
+      <option name="METHOD_NAME" value="javaTesterPageHabrButtonLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSetUp.availability_MainMenu_AllCourses_JavaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSetUp.javaTesterPageTwitterButtonLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="METHOD_NAME" value="availability_MainMenu_AllCourses_JavaTester" />
+      <option name="METHOD_NAME" value="javaTesterPageTwitterButtonLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSetUp.availability_MainMenu_AllCourses_Testing_JavaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSetUp.javaTesterPageYoutubeButtonLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="METHOD_NAME" value="availability_MainMenu_AllCourses_Testing_JavaTester" />
+      <option name="METHOD_NAME" value="javaTesterPageYoutubeButtonLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSetUp.availability_Testing_JavaTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSetUp.readBlogButtonOpensBlogPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="METHOD_NAME" value="availability_Testing_JavaTester" />
+      <option name="METHOD_NAME" value="readBlogButtonOpensBlogPage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSetUp.signupCourseButtonOpensPopup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSetUp.signupCourseButtonOpensPopupCanBeFilled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="METHOD_NAME" value="signupCourseButtonOpensPopup" />
+      <option name="METHOD_NAME" value="signupCourseButtonOpensPopupCanBeFilled" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,11 +95,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSetUp.signupCourseButtonOpensPopup" />
-        <item itemvalue="JUnit.TestSetUp.availability_Testing_JavaTester" />
-        <item itemvalue="JUnit.TestSetUp.availability_MainMenu_AllCourses_JavaTester" />
-        <item itemvalue="JUnit.TestSetUp.availability_MainMenu_AllCourses_Testing_JavaTester" />
-        <item itemvalue="JUnit.JavaTesterCoursePageTests.availability_MainMenu_AllCourses_Testing_JavaTester" />
+        <item itemvalue="JUnit.TestSetUp.javaTesterPageYoutubeButtonLeads" />
+        <item itemvalue="JUnit.TestSetUp.javaTesterPageTwitterButtonLeads" />
+        <item itemvalue="JUnit.TestSetUp.javaTesterPageHabrButtonLeads" />
+        <item itemvalue="JUnit.TestSetUp.signupCourseButtonOpensPopupCanBeFilled" />
+        <item itemvalue="JUnit.TestSetUp.readBlogButtonOpensBlogPage" />
       </list>
     </recent_temporary>
   </component>
@@ -124,11 +120,20 @@
       <option name="project" value="LOCAL" />
       <updated>1696750873245</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="5 tests are ready&#10;&#10;5 testing methods are implemented and checked.">
+      <option name="closed" value="true" />
+      <created>1696788469770</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696788469770</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit&#10;&#10;Project's framework is set up. Main page and Java tester page classes are created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;&#10;Project's framework is set up. Main page and Java tester page classes are created." />
+    <MESSAGE value="5 tests are ready&#10;&#10;5 testing methods are implemented and checked." />
+    <option name="LAST_COMMIT_MESSAGE" value="5 tests are ready&#10;&#10;5 testing methods are implemented and checked." />
   </component>
 </project>
