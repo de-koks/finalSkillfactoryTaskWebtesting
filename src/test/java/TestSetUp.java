@@ -84,10 +84,53 @@ public class TestSetUp {
     }
 
     @Test
-    public void signupCourseButtonOpensPopup() {
+    public void signupCourseButtonOpensPopupCanBeFilled() {
         javaTesterCoursePage.open();
         javaTesterCoursePage.clickSignUpForCourseButton();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(javaTesterCoursePage.getSignUpForCoursePopupXpath())));
+        javaTesterCoursePage.fillSighCoursePopUp();
+    }
+
+    @Test
+    public void readBlogButtonOpensBlogPage() {
+        javaTesterCoursePage.open();
+        javaTesterCoursePage.clickReadBlogButton();
+        switchToNextTab();
+        StringBuffer stringBuffer = new StringBuffer(driver.getCurrentUrl());
+        String currentPage = stringBuffer.substring(0, javaTesterCoursePage.getBlogPageUrl().length());
+        assertEquals(javaTesterCoursePage.getBlogPageUrl(), currentPage);
+    }
+
+    @Test
+    public void javaTesterPageHabrButtonLeads() {
+        javaTesterCoursePage.open();
+        javaTesterCoursePage.clickHabrButton();
+        switchToNextTab();
+        assertEquals(javaTesterCoursePage.getHabrPageUrl(), driver.getCurrentUrl());
+    }
+
+    @Test
+    public void javaTesterPageVkButtonLeads() {
+        javaTesterCoursePage.open();
+        javaTesterCoursePage.clickVkButton();
+        switchToNextTab();
+        assertEquals(javaTesterCoursePage.getVkPageUrl(), driver.getCurrentUrl());
+    }
+
+    @Test
+    public void javaTesterPageTwitterButtonLeads() {
+        javaTesterCoursePage.open();
+        javaTesterCoursePage.clickTwitterButton();
+        switchToNextTab();
+        assertEquals(javaTesterCoursePage.getTwitterPageUrl(), driver.getCurrentUrl());
+    }
+
+    @Test
+    public void javaTesterPageYoutubeButtonLeads() {
+        javaTesterCoursePage.open();
+        javaTesterCoursePage.clickYoutubeButton();
+        switchToNextTab();
+        assertEquals(javaTesterCoursePage.getYoutubePageUrl(), driver.getCurrentUrl());
     }
 }
