@@ -2,6 +2,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class JavaTesterCoursePage {
+    private final WebDriver driver;
+    public JavaTesterCoursePage(WebDriver driver){
+        this.driver = driver;
+    }
     private static final String JAVA_TESTER_COURSE_URL = "https://skillfactory.ru/java-qa-engineer-testirovshik-po";
     private static final String SIGN_UP_FOR_COURSE_BUTTON_CLASS = "tn-elem__3596564571596261549401";
     private static final String SIGN_UP_FOR_COURSE_POPUP_XPATH = "//div[@class='t702__wrapper']//div[text()='Записаться на курс']";
@@ -15,7 +19,17 @@ public class JavaTesterCoursePage {
     private static final String TWITTER_PAGE_URL = "https://twitter.com/skillfactoryru";
     private static final String YOUTUBE_BUTTON_XPATH = "//div[@class='tn-atom']/a[text()='YouTube']";
     private static final String YOUTUBE_PAGE_URL = "https://www.youtube.com/channel/UClOTq6XN8g7-16QLGnZ6_EA";
+    private static final String TELEGRAM_BUTTON_XPATH = "//a[text()='Telegram']";
+    private static final String TELEGRAM_CHANNEL_URL = "https://t.me/skillfactory";
+    private static final String DZEN_BUTTON_TEXT = "Яндекс.Дзен";
+    private static final String DZEN_PAGE_URL = "https://dzen.ru/skill_factor";
 
+    public String getPageUrl(){
+        return JAVA_TESTER_COURSE_URL;
+    }
+    public String getSignUpForCoursePopupXpath() {
+        return SIGN_UP_FOR_COURSE_POPUP_XPATH;
+    }
     public String getBlogPageUrl() {
         return BLOG_PAGE_URL;
     }
@@ -31,16 +45,9 @@ public class JavaTesterCoursePage {
     public String getYoutubePageUrl() {
         return YOUTUBE_PAGE_URL;
     }
-    public String getSignUpForCoursePopupXpath() {
-        return SIGN_UP_FOR_COURSE_POPUP_XPATH;
-    }
-    public static String getUrl(){
-        return JAVA_TESTER_COURSE_URL;
-    }
-    private final WebDriver driver;
-    public JavaTesterCoursePage(WebDriver driver){
-        this.driver = driver;
-    }
+    public String getTelegramChannelUrl() { return TELEGRAM_CHANNEL_URL; }
+
+    public String getDzenPageUrl() { return DZEN_PAGE_URL; }
 
     public void open(){
         driver.get(JAVA_TESTER_COURSE_URL);
@@ -51,9 +58,9 @@ public class JavaTesterCoursePage {
     }
     public void fillSighCoursePopUp() {
         UserData userData = UserData.createUserData();
-        driver.findElement(By.id("input_1495810359387")).sendKeys(String.format("%s %s", userData.getUserFirstName(), userData.getUserLastName()));
-        driver.findElement(By.id("input_1495810354468")).sendKeys(userData.getUserEmail());
-        driver.findElement(By.id("input_1495810410810")).sendKeys(userData.getUserPhoneNumber());
+        driver.findElement(By.id("input_1495810359387")).sendKeys(String.format("%s %s", userData.userFirstName(), userData.userLastName()));
+        driver.findElement(By.id("input_1495810354468")).sendKeys(userData.userEmail());
+        driver.findElement(By.id("input_1495810410810")).sendKeys(userData.userPhoneNumber());
     }
 
     public void clickReadBlogButton() {
@@ -75,5 +82,10 @@ public class JavaTesterCoursePage {
     public void clickYoutubeButton() {
         driver.findElement(By.xpath(YOUTUBE_BUTTON_XPATH)).click();
     }
-
+    public void clickTelegramButton() {
+        driver.findElement(By.xpath(TELEGRAM_BUTTON_XPATH)).click();
+    }
+    public void clickDzenButton() {
+        driver.findElement(By.linkText(DZEN_BUTTON_TEXT)).click();
+    }
 }

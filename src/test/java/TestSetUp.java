@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class TestSetUp {
     public static final WebDriver driver;
     public static final MainPage mainPage;
-    public static final CoursesPage coursesPage;
+    public static final AllCoursesPage allCoursesPage;
     public static final TestingCoursesPage testingCoursesPage;
     public static final JavaTesterCoursePage javaTesterCoursePage;
 
@@ -24,7 +24,7 @@ public class TestSetUp {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         mainPage = new MainPage(driver);
-        coursesPage = new CoursesPage(driver);
+        allCoursesPage = new AllCoursesPage(driver);
         testingCoursesPage = new TestingCoursesPage(driver);
         javaTesterCoursePage = new JavaTesterCoursePage(driver);
     }
@@ -39,29 +39,41 @@ public class TestSetUp {
         driver.quit();
     }
 
+    /*
+    Java QA course page is available by the path:
+    Main page - > Main menu -> Online courses -> All online courses -> Testing -> Java tester card.
+     */
     @Test
     public void availability_MainMenu_AllCourses_Testing_JavaTester() {
         mainPage.open();
         mainPage.clickAllCoursesOnMainMenu();
         switchToNextTab();
-        coursesPage.clickTestingButton();
+        allCoursesPage.clickTestingButton();
         testingCoursesPage.clickJavaTesterCourseCard();
         switchToNextTab();
         String currentUrl = driver.getCurrentUrl();
-        assertEquals(JavaTesterCoursePage.getUrl(), currentUrl);
+        assertEquals(javaTesterCoursePage.getPageUrl(), currentUrl);
     }
 
+    /*
+    Java QA course page is available by the path:
+    Main page - > Main menu -> Online courses -> All online courses -> Java tester card.
+     */
     @Test
     public void availability_MainMenu_AllCourses_JavaTester() {
         mainPage.open();
         mainPage.clickAllCoursesOnMainMenu();
         switchToNextTab();
-        coursesPage.clickJavaTesterCourseCard();
+        allCoursesPage.clickJavaTesterCourseCard();
         switchToNextTab();
         String currentUrl = driver.getCurrentUrl();
-        assertEquals(JavaTesterCoursePage.getUrl(), currentUrl);
+        assertEquals(javaTesterCoursePage.getPageUrl(), currentUrl);
     }
 
+    /*
+    Java QA course page is available by the path:
+    Main page - > Main menu -> Online courses -> Testing -> Java tester card.
+     */
     @Test
     public void availability_MainMenu_Testing_JavaTester() {
         mainPage.open();
@@ -69,9 +81,12 @@ public class TestSetUp {
         switchToNextTab();
         testingCoursesPage.clickJavaTesterCourseCard();
         String currentUrl = driver.getCurrentUrl();
-        assertEquals(JavaTesterCoursePage.getUrl(), currentUrl);
+        assertEquals(javaTesterCoursePage.getPageUrl(), currentUrl);
     }
 
+    /*
+    Java QA course page is available by the path: Main page - > Testing -> Java tester card.
+     */
     @Test
     public void availability_Testing_JavaTester() {
         mainPage.open();
@@ -80,9 +95,13 @@ public class TestSetUp {
         testingCoursesPage.clickJavaTesterCourseCard();
         switchToNextTab();
         String currentUrl = driver.getCurrentUrl();
-        assertEquals(JavaTesterCoursePage.getUrl(), currentUrl);
+        assertEquals(javaTesterCoursePage.getPageUrl(), currentUrl);
     }
 
+    /*
+    "Sign up for a course" button on the Java tester page opens a pop-up
+    with Name, Email, Phone number fields that can be filled.
+     */
     @Test
     public void signupCourseButtonOpensPopupCanBeFilled() {
         javaTesterCoursePage.open();
@@ -92,6 +111,9 @@ public class TestSetUp {
         javaTesterCoursePage.fillSighCoursePopUp();
     }
 
+    /*
+    "Read blog" button on the Java QA course page opens the Blog page.
+     */
     @Test
     public void readBlogButtonOpensBlogPage() {
         javaTesterCoursePage.open();
@@ -102,6 +124,9 @@ public class TestSetUp {
         assertEquals(javaTesterCoursePage.getBlogPageUrl(), currentPage);
     }
 
+    /*
+    Habr button at the footer of the Java QA course page leads to the skillfactory's habr.com page.
+     */
     @Test
     public void javaTesterPageHabrButtonLeads() {
         javaTesterCoursePage.open();
@@ -110,6 +135,9 @@ public class TestSetUp {
         assertEquals(javaTesterCoursePage.getHabrPageUrl(), driver.getCurrentUrl());
     }
 
+    /*
+    VKontakte button at the footer of the Java QA course page leads to the skillfactory's vk.com page.
+     */
     @Test
     public void javaTesterPageVkButtonLeads() {
         javaTesterCoursePage.open();
@@ -118,6 +146,9 @@ public class TestSetUp {
         assertEquals(javaTesterCoursePage.getVkPageUrl(), driver.getCurrentUrl());
     }
 
+    /*
+    Twitter button at the footer of the Java QA course page leads to the skillfactory's twitter.com page.
+     */
     @Test
     public void javaTesterPageTwitterButtonLeads() {
         javaTesterCoursePage.open();
@@ -126,11 +157,50 @@ public class TestSetUp {
         assertEquals(javaTesterCoursePage.getTwitterPageUrl(), driver.getCurrentUrl());
     }
 
+    /*
+    YouTube button at the footer of the Java QA course page leads to the skillfactory's youtube.com page.
+     */
     @Test
     public void javaTesterPageYoutubeButtonLeads() {
         javaTesterCoursePage.open();
         javaTesterCoursePage.clickYoutubeButton();
         switchToNextTab();
         assertEquals(javaTesterCoursePage.getYoutubePageUrl(), driver.getCurrentUrl());
+    }
+
+    /*
+    Telegram button at the footer of the Java QA course page leads to the skillfactory's telegram channel.
+     */
+    @Test
+    public void javaTesterPageTelegramButtonLeads() {
+        javaTesterCoursePage.open();
+        javaTesterCoursePage.clickTelegramButton();
+        switchToNextTab();
+        assertEquals(javaTesterCoursePage.getTelegramChannelUrl(), driver.getCurrentUrl());
+    }
+
+    /*
+    Dzen button at the footer of the Java QA course page leads to the skillfactory's dzen.ru page.
+     */
+    @Test
+    public void javaTesterPageDzenButtonLeads() {
+        javaTesterCoursePage.open();
+        javaTesterCoursePage.clickDzenButton();
+        switchToNextTab();
+        assertEquals(javaTesterCoursePage.getDzenPageUrl(), driver.getCurrentUrl());
+    }
+
+    /*
+    The Proforientation test card on the All courses page leads to the Proforientation test page.
+     */
+    @Test
+    public void allCoursesPageProforientationTestCardLeads() {
+        allCoursesPage.open();
+        allCoursesPage.clickProforientationTestCard();
+        switchToNextTab();
+
+        StringBuffer stringBuffer = new StringBuffer(driver.getCurrentUrl());
+        String currentPage = stringBuffer.substring(0, allCoursesPage.getProforientationTestPageUrl().length());
+        assertEquals(allCoursesPage.getProforientationTestPageUrl(), currentPage);
     }
 }
