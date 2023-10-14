@@ -1,3 +1,5 @@
+package TestResources;
+
 import com.github.javafaker.Faker;
 
 import java.util.Random;

@@ -1,4 +1,7 @@
-import org.junit.jupiter.api.AfterEach;
+import Pages.AllCoursesPage;
+import Pages.JavaTesterCoursePage;
+import Pages.MainPage;
+import Pages.TestingCoursesPage;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.ArrayList;
 
-public class TestSetUp {
+public class JavaTesterCoursePageTests {
     public static final WebDriver driver;
     public static final MainPage mainPage;
     public static final AllCoursesPage allCoursesPage;
@@ -191,17 +194,4 @@ public class TestSetUp {
         assertEquals(javaTesterCoursePage.getDzenPageUrl(), driver.getCurrentUrl());
     }
 
-    /*
-    The Proforientation test card on the All Courses page leads to the Proforientation test page.
-     */
-    @Test
-    public void allCoursesPageProforientationTestCardLeads() {
-        allCoursesPage.open();
-        allCoursesPage.clickProforientationTestCard();
-        switchToNextTab();
-
-        StringBuffer stringBuffer = new StringBuffer(driver.getCurrentUrl());
-        String currentPage = stringBuffer.substring(0, allCoursesPage.getProforientationTestPageUrl().length());
-        assertEquals(allCoursesPage.getProforientationTestPageUrl(), currentPage);
-    }
 }

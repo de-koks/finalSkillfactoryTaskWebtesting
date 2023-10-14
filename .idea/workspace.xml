@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="10 tests are ready&#10;&#10;also UserData class was added for filling text input fields purposes.">
+    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="13 tests work without closing tabs">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AllCoursesPageTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/AllCoursesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AllCoursesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/JavaTesterCoursePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestingCoursesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/TestingCoursesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestResources/UserData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,51 +52,52 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestSetUp">
-    <configuration name="TestSetUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AllCoursesPageTests.allCoursesDataScientistCardLeads">
+    <configuration name="AllCoursesPageTests.allCoursesDataAnalystCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSetUp.allCoursesPageProforientationTestCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalTaskWeb" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="METHOD_NAME" value="allCoursesPageProforientationTestCardLeads" />
+      <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
+      <option name="METHOD_NAME" value="allCoursesDataAnalystCardLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSetUp.javaTesterPageDzenButtonLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AllCoursesPageTests.allCoursesDataScientistCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="METHOD_NAME" value="javaTesterPageDzenButtonLeads" />
+      <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
+      <option name="METHOD_NAME" value="allCoursesDataScientistCardLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSetUp.javaTesterPageTelegramButtonLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AllCoursesPageTests.allCoursesGraphDesignerProCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="METHOD_NAME" value="javaTesterPageTelegramButtonLeads" />
+      <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
+      <option name="METHOD_NAME" value="allCoursesGraphDesignerProCardLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSetUp.javaTesterPageYoutubeButtonLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AllCoursesPageTests.allCoursesPythonDevCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="METHOD_NAME" value="javaTesterPageYoutubeButtonLeads" />
+      <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
+      <option name="METHOD_NAME" value="allCoursesPythonDevCardLeads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AllCoursesPageTests.allCoursesPythonDevProCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTaskWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
+      <option name="METHOD_NAME" value="allCoursesPythonDevProCardLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSetUp" />
-        <item itemvalue="JUnit.TestSetUp.allCoursesPageProforientationTestCardLeads" />
-        <item itemvalue="JUnit.TestSetUp.javaTesterPageDzenButtonLeads" />
-        <item itemvalue="JUnit.TestSetUp.javaTesterPageTelegramButtonLeads" />
-        <item itemvalue="JUnit.TestSetUp.javaTesterPageYoutubeButtonLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesDataScientistCardLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesPythonDevProCardLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesGraphDesignerProCardLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesDataAnalystCardLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesPythonDevCardLeads" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697216529207</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="13 tests work without closing tabs">
+      <option name="closed" value="true" />
+      <created>1697294835987</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697294835987</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +180,8 @@
     <MESSAGE value="Initial commit&#10;&#10;Project's framework is set up. Main page and Java tester page classes are created." />
     <MESSAGE value="5 tests are ready&#10;&#10;5 testing methods are implemented and checked." />
     <MESSAGE value="10 tests are ready&#10;&#10;also UserData class was added for filling text input fields purposes." />
-    <option name="LAST_COMMIT_MESSAGE" value="10 tests are ready&#10;&#10;also UserData class was added for filling text input fields purposes." />
+    <MESSAGE value="trying to set entire suit execution" />
+    <MESSAGE value="13 tests work without closing tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="13 tests work without closing tabs" />
   </component>
 </project>
