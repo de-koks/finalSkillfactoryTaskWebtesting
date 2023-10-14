@@ -34,10 +34,10 @@ public class TestSetUp {
         driver.switchTo().window(tabs.get(tabs.size()-1));
     }
 
-    @AfterEach
-    public void closeBrowser(){
-        driver.quit();
-    }
+//    @AfterEach
+//    public void closeBrowser(){
+//        driver.quit();
+//    }
 
     /*
     Java QA course page is available by the path:
@@ -80,6 +80,7 @@ public class TestSetUp {
         mainPage.clickTestingOnMainMenu();
         switchToNextTab();
         testingCoursesPage.clickJavaTesterCourseCard();
+        switchToNextTab();
         String currentUrl = driver.getCurrentUrl();
         assertEquals(javaTesterCoursePage.getPageUrl(), currentUrl);
     }
@@ -191,7 +192,7 @@ public class TestSetUp {
     }
 
     /*
-    The Proforientation test card on the All courses page leads to the Proforientation test page.
+    The Proforientation test card on the All Courses page leads to the Proforientation test page.
      */
     @Test
     public void allCoursesPageProforientationTestCardLeads() {

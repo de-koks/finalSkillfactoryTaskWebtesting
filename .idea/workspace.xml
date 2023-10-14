@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="10 tests are ready&#10;&#10;also UserData class was added for filling text input fields purposes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CoursesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AllCoursesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestSetUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestingCoursesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestingCoursesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="beforeEach" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -45,7 +45,16 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestSetUp.allCoursesPageProforientationTestCardLeads">
+  <component name="RunManager" selected="JUnit.TestSetUp">
+    <configuration name="TestSetUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTaskWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSetUp.allCoursesPageProforientationTestCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
@@ -76,16 +85,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSetUp.javaTesterPageTwitterButtonLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalTaskWeb" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSetUp" />
-      <option name="METHOD_NAME" value="javaTesterPageTwitterButtonLeads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestSetUp.javaTesterPageYoutubeButtonLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
@@ -98,11 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSetUp" />
         <item itemvalue="JUnit.TestSetUp.allCoursesPageProforientationTestCardLeads" />
         <item itemvalue="JUnit.TestSetUp.javaTesterPageDzenButtonLeads" />
         <item itemvalue="JUnit.TestSetUp.javaTesterPageTelegramButtonLeads" />
         <item itemvalue="JUnit.TestSetUp.javaTesterPageYoutubeButtonLeads" />
-        <item itemvalue="JUnit.TestSetUp.javaTesterPageTwitterButtonLeads" />
       </list>
     </recent_temporary>
   </component>
