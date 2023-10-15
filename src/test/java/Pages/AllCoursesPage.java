@@ -3,9 +3,6 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import javax.swing.plaf.PanelUI;
-import java.util.PrimitiveIterator;
-
 public class AllCoursesPage {
     private final WebDriver driver;
     public AllCoursesPage(WebDriver driver){

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="20 tests are ready&#10;&#10;the project is refactored with packages&#10;closing unnecessary tabs still does not work">
+    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="30 (all) tests are ready&#10;&#10;closing unnecessary tabs still does not work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AllCoursesPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AllCoursesPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AllCoursesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AllCoursesPage.java" afterDir="false" />
     </list>
@@ -47,23 +46,12 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.AllCoursesPageTests.allCoursesPageProforientationTestCardLeads">
-    <configuration name="AllCoursesPageTests.allCoursesDataSciencesMiptCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AllCoursesPageTests">
+    <configuration name="AllCoursesPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
-      <option name="METHOD_NAME" value="allCoursesDataSciencesMiptCardLeads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AllCoursesPageTests.allCoursesITProductsManagementMiptCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FinalTaskWeb" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
-      <option name="METHOD_NAME" value="allCoursesITProductsManagementMiptCardLeads" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,13 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JavaTesterCoursePageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FinalTaskWeb" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JavaTesterCoursePageTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AllCoursesPageTests" />
+        <item itemvalue="JUnit.JavaTesterCoursePageTests" />
         <item itemvalue="JUnit.AllCoursesPageTests.allCoursesPageProforientationTestCardLeads" />
         <item itemvalue="JUnit.AllCoursesPageTests.allCoursesNlpInLinguisticsAndItTsuCardLeads" />
         <item itemvalue="JUnit.AllCoursesPageTests.allCoursesNeuralNetworkSpecCardLeads" />
-        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesITProductsManagementMiptCardLeads" />
-        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesDataSciencesMiptCardLeads" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697303405117</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="30 (all) tests are ready&#10;&#10;closing unnecessary tabs still does not work">
+      <option name="closed" value="true" />
+      <created>1697350068407</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697350068407</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +191,7 @@
     <MESSAGE value="trying to set entire suit execution" />
     <MESSAGE value="13 tests work without closing tabs" />
     <MESSAGE value="20 tests are ready&#10;&#10;the project is refactored with packages&#10;closing unnecessary tabs still does not work" />
-    <option name="LAST_COMMIT_MESSAGE" value="20 tests are ready&#10;&#10;the project is refactored with packages&#10;closing unnecessary tabs still does not work" />
+    <MESSAGE value="30 (all) tests are ready&#10;&#10;closing unnecessary tabs still does not work" />
+    <option name="LAST_COMMIT_MESSAGE" value="30 (all) tests are ready&#10;&#10;closing unnecessary tabs still does not work" />
   </component>
 </project>

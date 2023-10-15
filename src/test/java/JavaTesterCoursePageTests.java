@@ -33,21 +33,16 @@ public class JavaTesterCoursePageTests {
     }
 
     public void switchToNextTab() {
-        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        ArrayList<String> tabs = new ArrayList<> (driver.getWindowHandles());
         driver.switchTo().window(tabs.get(tabs.size()-1));
     }
-
-//    @AfterEach
-//    public void closeBrowser(){
-//        driver.quit();
-//    }
 
     /*
     Java QA course page is available by the path:
     Main page - > Main menu -> Online courses -> All online courses -> Testing -> Java tester card.
      */
     @Test
-    public void availability_MainMenu_AllCourses_Testing_JavaTester() {
+    public void availabilityMainMenuAllCoursesTestingJavaTester() {
         mainPage.open();
         mainPage.clickAllCoursesOnMainMenu();
         switchToNextTab();
@@ -63,7 +58,7 @@ public class JavaTesterCoursePageTests {
     Main page - > Main menu -> Online courses -> All online courses -> Java tester card.
      */
     @Test
-    public void availability_MainMenu_AllCourses_JavaTester() {
+    public void availabilityMainMenuAllCoursesJavaTester() {
         mainPage.open();
         mainPage.clickAllCoursesOnMainMenu();
         switchToNextTab();
@@ -78,7 +73,7 @@ public class JavaTesterCoursePageTests {
     Main page - > Main menu -> Online courses -> Testing -> Java tester card.
      */
     @Test
-    public void availability_MainMenu_Testing_JavaTester() {
+    public void availabilityMainMenuTestingJavaTester() {
         mainPage.open();
         mainPage.clickTestingOnMainMenu();
         switchToNextTab();
@@ -92,7 +87,7 @@ public class JavaTesterCoursePageTests {
     Java QA course page is available by the path: Main page - > Testing -> Java tester card.
      */
     @Test
-    public void availability_Testing_JavaTester() {
+    public void availabilityTestingJavaTester() {
         mainPage.open();
         mainPage.clickTestingButton();
         switchToNextTab();
