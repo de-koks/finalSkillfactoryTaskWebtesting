@@ -1,4 +1,5 @@
 import Pages.AllCoursesPage;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,6 +20,11 @@ public class AllCoursesPageTests {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         allCoursesPage = new AllCoursesPage(driver);
+    }
+
+    @AfterAll
+    public static void closeDriver() {
+        driver.quit();
     }
 
     public void switchToNextTab() {

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="30 (all) tests are ready&#10;&#10;closing unnecessary tabs still does not work">
+    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="After all annotation is added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AllCoursesPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AllCoursesPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AllCoursesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AllCoursesPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -38,15 +41,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "d0128408",
+    "ignore.virus.scanning.warn.message": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.AllCoursesPageTests">
+}]]></component>
+  <component name="RunManager" selected="JUnit.JavaTesterCoursePageTests">
     <configuration name="AllCoursesPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
@@ -97,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AllCoursesPageTests" />
         <item itemvalue="JUnit.JavaTesterCoursePageTests" />
+        <item itemvalue="JUnit.AllCoursesPageTests" />
         <item itemvalue="JUnit.AllCoursesPageTests.allCoursesPageProforientationTestCardLeads" />
         <item itemvalue="JUnit.AllCoursesPageTests.allCoursesNlpInLinguisticsAndItTsuCardLeads" />
         <item itemvalue="JUnit.AllCoursesPageTests.allCoursesNeuralNetworkSpecCardLeads" />
@@ -170,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697350068407</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="30 (all) tests are ready and work, checklist&#10;&#10;checklist is added&#10;closing unnecessary tabs still does not work">
+      <option name="closed" value="true" />
+      <created>1697355238714</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697355238715</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +203,8 @@
     <MESSAGE value="13 tests work without closing tabs" />
     <MESSAGE value="20 tests are ready&#10;&#10;the project is refactored with packages&#10;closing unnecessary tabs still does not work" />
     <MESSAGE value="30 (all) tests are ready&#10;&#10;closing unnecessary tabs still does not work" />
-    <option name="LAST_COMMIT_MESSAGE" value="30 (all) tests are ready&#10;&#10;closing unnecessary tabs still does not work" />
+    <MESSAGE value="30 (all) tests are ready and work, checklist&#10;&#10;checklist is added&#10;closing unnecessary tabs still does not work" />
+    <MESSAGE value="After all annotation is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="After all annotation is added" />
   </component>
 </project>
