@@ -2,6 +2,7 @@ import Pages.AllCoursesPage;
 import Pages.JavaTesterCoursePage;
 import Pages.MainPage;
 import Pages.TestingCoursesPage;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -32,6 +33,11 @@ public class JavaTesterCoursePageTests {
         javaTesterCoursePage = new JavaTesterCoursePage(driver);
     }
 
+    @AfterAll
+    public static void closeDriver() {
+        driver.quit();
+    }
+    
     public void switchToNextTab() {
         ArrayList<String> tabs = new ArrayList<> (driver.getWindowHandles());
         driver.switchTo().window(tabs.get(tabs.size()-1));
