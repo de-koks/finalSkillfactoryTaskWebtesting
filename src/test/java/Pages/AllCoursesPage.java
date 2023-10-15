@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import javax.swing.plaf.PanelUI;
+import java.util.PrimitiveIterator;
 
 public class AllCoursesPage {
     private final WebDriver driver;
@@ -30,6 +31,26 @@ public class AllCoursesPage {
     private static final String PYTHON_DEVELOPER_PRO_PAGE_URL = "https://skillfactory.ru/python-developer-pro";
     private static final String DATA_SCIENTIST_CARD_XPATH = "//div[@class='card__link']//a[text()='Data Scientist']";
     private static final String DATA_SCIENTIST_PAGE_URL = "https://skillfactory.ru/data-scientist-pro";
+    private static final String DATA_SCIENTIST_PRO_CARD_XPATH = "//div[@class='card__link']//a[text()='Data Scientist с нуля до PRO']";
+    private static final String DATA_SCIENTIST_PRO_PAGE_URL = "https://skillfactory.ru/data-scientist-pro-mgu";
+    private static final String PROJECT_MANAGER_CARD_XPATH = "//div[@class='card__link']//a[text()='Project Manager в IT']";
+    private static final String PROJECT_MANAGER_PAGE_URL = "https://skillfactory.ru/project-manager";
+    private static final String FULLSTACK_PYTHON_DEVELOPER_CARD_XPATH = "//div[@class='card__link']//a[text()='Fullstack-разработчик на Python']";
+    private static final String FULLSTACK_PYTHON_DEVELOPER_PAGE_URL = "https://skillfactory.ru/python-fullstack-web-developer-b";
+    private static final String WHITE_HACKER_CARD_XPATH = "//div[@class='card__link']//a[contains(text(),'хакер')]";
+    private static final String WHITE_HACKER_PAGE_URL = "https://skillfactory.ru/cyber-security-etichnij-haker";
+    private static final String UX_UI_DESIGNER_PRO_CARD_XPATH = "//div[@class='card__link']//a[contains(text(),'UI-дизайнер с нуля до PRO')]";
+    private static final String UX_UI_DESIGNER_PRO_PAGE_URL = "https://contented.ru/edu/ux-ui-designer-pro?utm_source=skillfactory";
+    private static final String INTERNET_MARKETER_CARD_XPATH = "//div[@class='card__link']//a[text()='Интернет-маркетолог']";
+    private static final String INTERNET_MARKETER_PAGE_URL = "https://new.skillfactory.ru/internet-marketing-new";
+    private static final String DATA_SCIENCES_MIPT_CARD_XPATH = "//div[@class='card__link']//a[text()='Науки о данных']";
+    private static final String DATA_SCIENCES_MIPT_PAGE_URL = "https://new.skillfactory.ru/data-science-machine-learning-mipt";
+    private static final String IT_PRODUCTS_MANAGEMENT_MIPT_CARD_XPATH = "//div[@class='card__link']//a[text()='Управление IT-продуктами']";
+    private static final String IT_PRODUCTS_MANAGEMENT_MIPT_PAGE_URL = "https://new.skillfactory.ru/new-upravlenie-it-produktami-mipt";
+    private static final String NEURAL_NETWORKS_SPEC_CARD_XPATH = "//div[@class='card__link']//a[text()='Специалист по нейронным сетям']";
+    private static final String NEURAL_NETWORKS_SPEC_PAGE_URL = "https://skillfactory.ru/kurs-po-nejronnim-setyam";
+    private static final String NLP_IN_LINGUISTICS_AND_IT_CARD_TSU_CARD_XPATH = "//div[@class='card__link']//a[text()='Анализ естественного языка (NLP) в лингвистике и IT']";
+    private static final String NLP_IN_LINGUISTICS_AND_IT_PAGE_URL = "https://new.skillfactory.ru/nlp-data-research-tsu";
     public String getProforientationTestPageUrl() { return PROFORIENTATION_TEST_PAGE_URL; }
     public String getItSpecFromScratchPageUrl() { return IT_SPEC_FROM_SCRATCH_PAGE_URL; }
     public String getPythonTesterPageUrl() { return PYTHON_TESTER_PAGE_URL; }
@@ -38,6 +59,16 @@ public class AllCoursesPage {
     public String getGraphDesignerProPageUrl() { return GRAPH_DESIGNER_PRO_PAGE_URL; }
     public String getPythonDeveloperProPageUrl() { return PYTHON_DEVELOPER_PRO_PAGE_URL; }
     public String getDataScientistPageUrl() { return DATA_SCIENTIST_PAGE_URL; }
+    public String getDataScientistProPageUrl() { return DATA_SCIENTIST_PRO_PAGE_URL; }
+    public String getProjectManagerPageUrl() { return PROJECT_MANAGER_PAGE_URL; }
+    public String getFullstackPythonDeveloperPageUrl() { return FULLSTACK_PYTHON_DEVELOPER_PAGE_URL; }
+    public String getWhiteHackerPageUrl() { return WHITE_HACKER_PAGE_URL; }
+    public String getUxUiDesignerProPageUrl() { return UX_UI_DESIGNER_PRO_PAGE_URL; }
+    public String getInternetMarketerPageUrl() { return INTERNET_MARKETER_PAGE_URL; }
+    public String getDataSciencesMiptPageUrl() { return DATA_SCIENCES_MIPT_PAGE_URL; }
+    public String getItProductsManagementMiptPageUrl() { return IT_PRODUCTS_MANAGEMENT_MIPT_PAGE_URL; }
+    public String getNeuralNetworksSpecPageUrl() { return NEURAL_NETWORKS_SPEC_PAGE_URL; }
+    public String getNlpInLinguisticsAndItPageUrl() { return NLP_IN_LINGUISTICS_AND_IT_PAGE_URL; }
 
     public void open() { driver.get(ALL_COURSES_PAGE_URL); }
     public void clickTestingButton() {
@@ -70,4 +101,14 @@ public class AllCoursesPage {
     public void clickDataScientistCard() {
         driver.findElement(By.xpath(DATA_SCIENTIST_CARD_XPATH)).click();
     }
+    public void clickDataScientistProCard() { driver.findElement(By.xpath(DATA_SCIENTIST_PRO_CARD_XPATH)).click(); }
+    public void clickProjectManagerCard() { driver.findElement(By.xpath(PROJECT_MANAGER_CARD_XPATH)).click(); }
+    public void clickFullstackPythonDeveloperCard() { driver.findElement(By.xpath(FULLSTACK_PYTHON_DEVELOPER_CARD_XPATH)).click(); }
+    public void clickWhiteHackerCard() { driver.findElement(By.xpath(WHITE_HACKER_CARD_XPATH)).click(); }
+    public void clickUxUiDesignerProCard() { driver.findElement(By.xpath(UX_UI_DESIGNER_PRO_CARD_XPATH)).click(); }
+    public void clickInternetMarketerCard() { driver.findElement(By.xpath(INTERNET_MARKETER_CARD_XPATH)).click(); }
+    public void clickDataSciencesMiptCard() { driver.findElement(By.xpath(DATA_SCIENCES_MIPT_CARD_XPATH)).click(); }
+    public void clickItProductsManagementMiptCard() { driver.findElement(By.xpath(IT_PRODUCTS_MANAGEMENT_MIPT_CARD_XPATH)).click(); }
+    public void clickNeuralNetworksSpecCard() { driver.findElement(By.xpath(NEURAL_NETWORKS_SPEC_CARD_XPATH)).click(); }
+    public void clickNlpInLinguisticsAndItCard() { driver.findElement(By.xpath(NLP_IN_LINGUISTICS_AND_IT_CARD_TSU_CARD_XPATH)).click(); }
 }

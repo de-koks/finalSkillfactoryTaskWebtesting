@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="13 tests work without closing tabs">
-      <change afterPath="$PROJECT_DIR$/src/test/java/AllCoursesPageTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/AllCoursesPage.java" afterDir="false" />
+    <list default="true" id="be86ef2b-0698-4145-b9ec-c6375713b7bc" name="Changes" comment="20 tests are ready&#10;&#10;the project is refactored with packages&#10;closing unnecessary tabs still does not work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AllCoursesPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/JavaTesterCoursePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestingCoursesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/TestingCoursesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestResources/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AllCoursesPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AllCoursesPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaTesterCoursePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AllCoursesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AllCoursesPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,52 +47,52 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.AllCoursesPageTests.allCoursesDataScientistCardLeads">
-    <configuration name="AllCoursesPageTests.allCoursesDataAnalystCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AllCoursesPageTests.allCoursesPageProforientationTestCardLeads">
+    <configuration name="AllCoursesPageTests.allCoursesDataSciencesMiptCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
-      <option name="METHOD_NAME" value="allCoursesDataAnalystCardLeads" />
+      <option name="METHOD_NAME" value="allCoursesDataSciencesMiptCardLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllCoursesPageTests.allCoursesDataScientistCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AllCoursesPageTests.allCoursesITProductsManagementMiptCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
-      <option name="METHOD_NAME" value="allCoursesDataScientistCardLeads" />
+      <option name="METHOD_NAME" value="allCoursesITProductsManagementMiptCardLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllCoursesPageTests.allCoursesGraphDesignerProCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AllCoursesPageTests.allCoursesNeuralNetworkSpecCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
-      <option name="METHOD_NAME" value="allCoursesGraphDesignerProCardLeads" />
+      <option name="METHOD_NAME" value="allCoursesNeuralNetworkSpecCardLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllCoursesPageTests.allCoursesPythonDevCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AllCoursesPageTests.allCoursesNlpInLinguisticsAndItTsuCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
-      <option name="METHOD_NAME" value="allCoursesPythonDevCardLeads" />
+      <option name="METHOD_NAME" value="allCoursesNlpInLinguisticsAndItTsuCardLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AllCoursesPageTests.allCoursesPythonDevProCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AllCoursesPageTests.allCoursesPageProforientationTestCardLeads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FinalTaskWeb" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AllCoursesPageTests" />
-      <option name="METHOD_NAME" value="allCoursesPythonDevProCardLeads" />
+      <option name="METHOD_NAME" value="allCoursesPageProforientationTestCardLeads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesDataScientistCardLeads" />
-        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesPythonDevProCardLeads" />
-        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesGraphDesignerProCardLeads" />
-        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesDataAnalystCardLeads" />
-        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesPythonDevCardLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesPageProforientationTestCardLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesNlpInLinguisticsAndItTsuCardLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesNeuralNetworkSpecCardLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesITProductsManagementMiptCardLeads" />
+        <item itemvalue="JUnit.AllCoursesPageTests.allCoursesDataSciencesMiptCardLeads" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697294835987</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="20 tests are ready&#10;&#10;the project is refactored with packages&#10;closing unnecessary tabs still does not work">
+      <option name="closed" value="true" />
+      <created>1697303405117</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697303405117</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +185,7 @@
     <MESSAGE value="10 tests are ready&#10;&#10;also UserData class was added for filling text input fields purposes." />
     <MESSAGE value="trying to set entire suit execution" />
     <MESSAGE value="13 tests work without closing tabs" />
-    <option name="LAST_COMMIT_MESSAGE" value="13 tests work without closing tabs" />
+    <MESSAGE value="20 tests are ready&#10;&#10;the project is refactored with packages&#10;closing unnecessary tabs still does not work" />
+    <option name="LAST_COMMIT_MESSAGE" value="20 tests are ready&#10;&#10;the project is refactored with packages&#10;closing unnecessary tabs still does not work" />
   </component>
 </project>

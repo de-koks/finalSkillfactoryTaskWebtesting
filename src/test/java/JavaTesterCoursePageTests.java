@@ -98,8 +98,7 @@ public class JavaTesterCoursePageTests {
         switchToNextTab();
         testingCoursesPage.clickJavaTesterCourseCard();
         switchToNextTab();
-        String currentUrl = driver.getCurrentUrl();
-        assertEquals(javaTesterCoursePage.getPageUrl(), currentUrl);
+        assertEquals(javaTesterCoursePage.getPageUrl(), driver.getCurrentUrl());
     }
 
     /*
